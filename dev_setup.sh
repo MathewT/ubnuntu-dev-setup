@@ -19,4 +19,5 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 cd ~/.vim_runtime
 git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
 
+#Installing Ruby 2.2.0
 rvm install 2.2.0
