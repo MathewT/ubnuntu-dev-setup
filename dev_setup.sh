@@ -14,3 +14,7 @@ echo "source ~/.rvm/scripts/rvm" >> ~/.bashrc
 
 git clone git://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+cd ~/.vim_runtime
+git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
+
