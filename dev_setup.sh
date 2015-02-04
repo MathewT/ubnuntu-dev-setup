@@ -38,3 +38,7 @@ sudo groupadd docker
 sudo gpasswd -a ${USER} docker
 sudo service docker restart
 
+curl -L https://github.com/docker/fig/releases/download/1.0.1/fig-`uname -s`-`uname -m` > fig2
+sudo mv fig2 /usr/local/bin/fig
+sudo chmod +x /usr/local/bin/fig
+
