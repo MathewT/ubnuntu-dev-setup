@@ -9,6 +9,7 @@ sudo zypper install libopenssl-devel libmysqlclient-devel libmysql56client_r18 z
     automake bison python-devel libpcre1  
 
 
+
 sudo apt-get install -y build-essential vim git-core curl libssl-dev \
     libreadline-dev libyaml-dev libxml2-dev libxslt1-dev \
     libcurl4-openssl-dev python-software-properties mysql-client \
@@ -32,15 +33,13 @@ git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
 #Installing Ruby 2.2.0
 rvm install 2.2.0
 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
-
-sudo sh -c "echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
-sudo apt-get update
-sudo apt-get install -y --force-yes lxc-docker
+sudo zypper ar -f http://download.opensuse.org/repositories/Virtualization/openSUSE_13.2/ Virtualization
 
 sudo groupadd docker
 sudo gpasswd -a ${USER} docker
 sudo service docker restart
+
+newgrp docker
 
 curl -L https://github.com/docker/fig/releases/download/1.0.1/fig-`uname -s`-`uname -m` > fig2
 sudo mv fig2 /usr/local/bin/fig
