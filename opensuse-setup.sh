@@ -6,7 +6,7 @@ echo "Please make sure you have already setup any ssh keys needed!"
 cd $HOME
 echo $PWD
 sudo zypper install libopenssl-devel libmysqlclient-devel libmysql56client_r18 zlib-devel libtool \
-    automake bison python-devel libpcre1  
+    automake bison python-devel libpcre1 ctags libyaml-0-2 libyaml-devel
 
 
 
