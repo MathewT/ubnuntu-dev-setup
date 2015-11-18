@@ -7,11 +7,11 @@ cd $HOME
 echo $PWD
 sudo apt-get install -y build-essential vim git-core curl libssl-dev \
     libreadline-dev libyaml-dev libxml2-dev libxslt1-dev \
-    libcurl4-openssl-dev python-software-properties mysql-client \
+    libcurl4-openssl-dev python-software-properties \
     libmysqlclient-dev zlib1g-dev libpcre3 libpcre3-dev \
     libgdbm-dev libncurses5-dev automake libtool bison \
     libffi-dev python-dev zlib1g-dev software-properties-common \
-    ctags gawk libsqlite3-0 sqlite3
+    ctags gawk
 
 ## Install rvm to manage Ruby installs
 gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
